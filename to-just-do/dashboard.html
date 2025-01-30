@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Just-Do - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <!-- dashboard header -->
+    <header class="dashboard-header">
+        <div class="logo-container">
+            <img src="assets/logo.svg" alt="To-Just-Do Logo" class="header-logo-image">
+            <div class="header-logo-text">
+                <h1>To-Just-Do</h1>
+                <p>List Your Tasks</p>
+            </div>
+        </div>
+        <div class="user-info">
+            <span class="full-name">User</span>
+            <img src="assets/user_icon.svg" alt="User Icon" class="user-icon">
+        </div>
+    </header>
+
+    <!-- main content -->
+    <div class="dashboard-content">
+        <!-- left side task list -->
+        <div class="task-list-section" >
+            <h2>Your Tasks</h2>
+            <p class="task-stats">0/0 Completed</p>
+            <div class="task-list"><div class="task-item">
+                <span class="task-title">Task 0</span>
+                <button class="check-done"><img src="assets/check.svg" alt="check">
+            </div>
+            </div>
+            <button class="add-task-btn">
+                <img src="assets/add_icon.svg" alt="Add Task">
+            </button>
+        </div>
+
+        <!-- middle section task content -->
+        <div class="task-details-section">
+            <h2>Task 0</h2>
+            <p class="task-created">Created on ...</p>
+            <textarea class="task-content" placeholder="Edit your task details here..."></textarea>
+            <button class="delete-task-btn">
+                <img src="assets/delete_icon.svg" alt="Delete Task">
+            </button>
+        </div>
+
+
+        <!-- right section filtering -->
+        <div class="filter-section">
+            <h2>Filter</h2>
+            <select class="filter-dropdown" >
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="pending">Pending</option>
+            </select>
+            <button class="log-out-btn"onclick="logoutUser()">
+                <img src="assets/log_out.svg" alt="Log Out">
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
